@@ -1,0 +1,423 @@
+/* if you are using any Google fonts change the font names below to your fonts. 
+Any spaces in your font name should be replaced with a +. 
+Fonts are separated by a & */
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon&family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+:root {
+  /* change the values below to your colors from your palette */
+  --primary-color: #396e94   ;
+  --secondary-color: #b4d4ee ;
+  --accent1-color: #ffc4d1;
+  --accent2-color: white;
+
+  /* change the values below to your chosen font(s) */
+  --heading-font: 'Roboto', sans-serif;;
+  --paragraph-font: 'Montserrat', sans-serif;;
+
+  /* these colors below should be chosen from among your palette colors above */
+  --headline-color-on-white: #396E94;  /* headlines on a white background */ 
+  --headline-color-on-color: blakc; /* headlines on a colored background */ 
+  --paragraph-color-on-white: #396E94; /* paragraph text on a white background */ 
+  --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
+  --paragraph-background-color: #396E94  ;
+  --nav-link-color: #396E94;
+  --nav-background-color: #b4d4ee;
+  --nav-hover-link-color: white;
+  --nav-hover-background-color: #396E94;
+}
+
+
+body {
+    background-color: var(--accent2-color);
+    font-family: var(--paragraph-font);
+    margin: 0;
+    padding: 0;
+}
+header {
+    display: grid;
+    grid-template-columns: 150px auto;
+    background-color: var(--primary-color);
+}
+nav {
+    display: flex;
+    justify-content: end;
+}
+nav a {
+    vertical-align: middle;
+}
+#hero {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin-top: -100px;
+}
+#hero-box {
+    grid-column: 1/4;
+    grid-row: 1/3;
+    z-index: -1;
+}
+#hero-msg h4 {
+    text-align: center;
+    color: white;
+}
+#hero-msg {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 100px;
+}
+.home-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+#hero-img {
+    grid-column: 1/4;
+    width: 100%;
+}
+
+
+
+main section {
+    text-align: center;
+}
+main section img {
+    box-sizing: border-box;
+}
+.card-image {
+    border: 10px solid #2D3142;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+.card-image:hover {
+    opacity: .6;
+    transform: scale(1.1);
+}
+.card-image, .mountains {
+    width: 100%;
+}
+.rivers-card {
+    grid-column: 2/4;
+    grid-row: 2/3;
+}
+.camping-card {
+    grid-column: 5/7;
+    grid-row: 2/3;
+}
+.rapids-card {
+    grid-column: 8/10;
+    grid-row: 2/3;
+}
+#mountains-img {
+    grid-column: 2/7;
+    grid-row: 5/8;
+    width: 100%;
+}
+
+
+#background {
+    height: 725px;
+    background-color: var(--secondary-color);
+    grid-column: 1/11;
+    grid-row: 4/9;
+}
+.mountains {
+    grid-column: 2/7;
+    grid-row: 5/7;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+
+
+
+.msg {
+    background-color: var(--secondary-color);
+    line-height: 1.75em;
+    padding: 35px;
+    grid-column: 6/10;
+    grid-row: 6/7;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+.msg h2 {
+    color: var(--accent1-color);
+}
+.msg p {
+    color: var(--accent1-color);
+    font-size: 1.8em;
+    padding-bottom: 15px;
+}
+
+
+
+footer {
+    background-color: var(--primary-color);
+    color: black;
+    padding: 25px 50px;
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+footer a {
+    color: var(--accent2-color);
+    text-decoration: none;
+}
+footer a:hover {
+    color: black;
+}
+footer p {
+    color: var(--accent2-color);
+    font-size: 1.2em;
+}
+footer p a:hover {
+    text-decoration: underline;
+}
+footer .social img {
+    padding-top: 15px;
+}
+
+
+
+h2 {
+    margin: 0;
+}
+nav a :hover {
+    background-color: var(--secondary-color);
+    color: black;
+}
+.book {
+    background-color: var(--secondary-color);
+    color: var(--accent2-color);
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    border-radius: 5px;
+}
+.book:hover{
+    background-color: var(--primary-color);
+    color: black;
+}
+.join {
+    background-color: var(--secondary-color);
+    color: var(--accent2-color);
+    text-decoration: none;
+    font-size: 18px;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+.join:hover {
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+}
+
+.home-title {
+    color: var(--accent2-color);
+    font-family: var(--heading-font);
+    font-size: 2em;
+    margin-top: 10px;
+}
+h4 {
+    color: var(--accent2-color);
+}
+
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+nav a {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    padding: 35px;
+}
+#hero-msg h1 {
+    text-align: center;
+}
+.button-box {
+    text-align : center;
+    margin: auto;
+    display: flex;
+    padding: 0px;
+    border: 0px;
+    border-radius: 5px;
+}
+
+
+.logo {
+    width: 80px;
+}
+
+
+#logo_link {
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+}
+.icon {
+    padding-top: 10px;
+}
+.rivers-card, .camping-card, .rapids-card {
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+ /*sub-page 1 css below*/
+ .subpage-title {
+    color: var(--accent2-color);
+    font-family: var(--heading-font);
+    font-size: 2em;
+    margin-top: 10px;
+    text-shadow: 3px 3px var(--accent1-color);
+ }
+
+ #background-2 {
+    height: 725px;
+    background-color: var(--accent1-color);
+    grid-column: 1/11;
+    grid-row: 9/14;
+ }
+ #mountains-img-2 {
+    grid-column: 5/10;
+    grid-row: 10/13;
+    width: 100%;
+ }
+ .msg-2 {
+    background-color: var(--secondary-color);
+    line-height: 1.75em;
+    padding: 35px;
+    grid-column: 2/6;
+    grid-row: 11/12;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+.msg-2 h2 {
+    color: var(--accent1-color);
+}
+.msg-2 p {
+    color: var(--accent1-color);
+    font-size: 1.8em;
+    padding-bottom: 15px;
+}
+
+/*contact us css below*/
+
+form {
+    /* Center the form on the page */
+    margin: 0 auto;
+    width: 400px;
+    /* Form outline */
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 1em;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  form li + li {
+    margin-top: 1em;
+  }
+  
+  label {
+    /* Uniform size & alignment */
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+  }
+  
+  input,
+  textarea {
+    /* To make sure that all text fields have the same font settings
+       By default, textareas have a monospace font */
+    font: 1em sans-serif;
+  
+    /* Uniform text field size */
+    width: 300px;
+    box-sizing: border-box;
+  
+    /* Match form field borders */
+    border: 1px solid #999;
+  }
+  
+  input:focus,
+  textarea:focus {
+    /* Additional highlight for focused elements */
+    border-color: #000;
+  }
+  
+  textarea {
+    /* Align multiline text fields with their labels */
+    vertical-align: top;
+  
+    /* Provide space to type some text */
+    height: 5em;
+  }
+  
+  .button {
+    /* Align buttons with the text fields */
+    padding-left: 90px; /* same size as the label elements */
+  }
+  
+  button {
+    /* This extra margin represent roughly the same space as the space
+       between the labels and their text fields */
+    margin-left: 0.5em;
+  }
+  #feedback {
+    background-color: antiquewhite;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: .5em;
+    /* make this element invisible until we are ready for it */
+    display: none;      
+}
+.moveDown {
+    margin-top: 3em;
+}
+  
+
+ /*index media below*/
+
+@media screen and (max-width: 900px) {
+    #hero, .home-grid {
+        display: block;
+        height: 100%;
+    }
+    nav, footer {
+        flex-direction: column;
+    }
+    nav a {
+        display: block;
+        padding: 15px;
+    }
+    #hero {
+        margin-top: 0;
+    }
+    #hero-msg {
+        margin-top: 0;
+    }
+    #hero-msg h4 {
+        display: none;
+    }
+    .home-title {
+        font-size: 25px;
+        color: #6f7364;
+    }
+    .rivers-card, .camping-card, .rapids-card { 
+        margin: 50px auto;
+        width: 60%;
+    }
+    #background {
+        display: none;
+    }
+    .mountains, .msg {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+    footer {
+        margin-top: 25px;
+    }
+}
