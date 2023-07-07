@@ -10,8 +10,8 @@ Fonts are separated by a & */
     /* change the values below to your colors from your palette */
     --primary-color: #396e94   ;
     --secondary-color: #b4d4ee ;
-    --accent1-color: #ffc4d1;
-    --accent2-color: white;
+    --accent1-color: white;
+    --accent2-color: rgb(62, 62, 84);
   
     /* change the values below to your chosen font(s) */
     --heading-font: 'Roboto', sans-serif;;
@@ -91,6 +91,19 @@ nav a:hover {
     grid-row: 1/2;
     margin-top: 100px;
 }
+
+.container {
+    margin-top: 200px;
+    margin-bottom: 200px;
+    margin: auto;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
 
 #hero-msg h1, #hero-msg h4 {
     text-align: center;
