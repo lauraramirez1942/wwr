@@ -3,6 +3,31 @@ body{
     background: linear-gradient(322deg, rgb(63, 94, 251) 37%, rgb(42, 40, 38) 67%);
 }
 
+#box1{
+    background-color: black;
+    width: 7px;
+    height: 7px;
+    grid-column: 1;
+}
+#box2{
+    background-color: #525252;
+    width: 7px;
+    height: 7px;
+    grid-column: 2;
+}
+#box3{
+    background-color: black;
+    width: 7px;
+    height: 7px;
+    grid-column: 3;
+}
+#box4{
+background-color: black;
+width: 7px;
+height: 7px;
+grid-column: 4;
+}
+
 .devotional_div{
     width: 600px;
     height: 235px;
@@ -67,27 +92,3 @@ h3{
     padding-bottom: 23px;
 }
 
-#box1{
-    background-color: black;
-    width: 7px;
-    height: 7px;
-    grid-column: 1;
-}
-#box2{
-    background-color: #525252;
-    width: 7px;
-    height: 7px;
-    grid-column: 2;
-}
-#box3{
-    background-color: black;
-    width: 7px;
-    height: 7px;
-    grid-column: 3;
-}
-#box4{
-background-color: black;
-width: 7px;
-height: 7px;
-grid-column: 4;
-}
